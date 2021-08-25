@@ -3,6 +3,6 @@
 ##Drawing of a computer
 This is my drawing of my computer as I know today web Aug 25 2021
 
-![](box.png)
+![](IMG_0721.jpg)
 
 I am showing a open box. A cardboard box.
