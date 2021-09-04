@@ -86,7 +86,20 @@ if -1<=(a-c)<=1 and -1<=(b-d)<=1:
 else:
     print("NO")
 ```
+
 # Bishop move
+
+```.py
+a=int(input("Enter an integer of 1 digit"))
+b=int(input("Enter an integer of 1 digit"))
+c=int(input("Enter an integer of 1 digit"))
+d=int(input("Enter an integer of 1 digit"))
+if abs(b-d)>=1 and abs(a-c)==abs(b-d):
+    print("YES")
+else:
+    print("NO")
+```
+
 # Queen move
 # Knight move
 # Chocolate bar
