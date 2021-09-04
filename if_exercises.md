@@ -51,6 +51,16 @@ else:
 
 # Rook move
 
+```.py
+a=int(input("Enter a figure of 1 digit"))
+b=int(input("Enter a figure of 1 digit"))
+c=int(input("Enter a figure of 1 digit"))
+d=int(input("Enter a figure of 1 digit"))
+if a==c or b==d:
+    print("YES")
+else:
+    print("NO")
+```
 # Chessboard -same color-
 # King move
 # Bishop move
