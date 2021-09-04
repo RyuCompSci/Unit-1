@@ -22,6 +22,19 @@ else:
 ```
 
 # Minimum of three numbers
+
+```.py
+x=int(input("Enter an integer"))
+y=int(input("Enter another integer"))
+z=int(input("Enter another integer"))
+if x<y and x<z:
+    print(x)
+elif y<x and y<z:
+    print(y)
+elif z<x and z<y:
+    print(z)
+```
+
 # Equal numbers
 # Rook move
 # Chessboard -same color-
