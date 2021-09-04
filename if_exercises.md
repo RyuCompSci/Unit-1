@@ -9,7 +9,7 @@ else :
     print(a)
 ```
 
-# Sign function
+# 2. Sign function
 
 ```.py
 x=int(input("Enter an integer"))
@@ -21,7 +21,7 @@ else:
     print(0)
 ```
 
-# Minimum of three numbers
+# 3. Minimum of three numbers
 
 ```.py
 x=int(input("Enter an integer"))
@@ -35,7 +35,7 @@ elif z<x and z<y:
     print(z)
 ```
 
-# Equal numbers
+# 4. Equal numbers
 
 ```.py
 x=int(input("Enter an integer"))
@@ -49,7 +49,7 @@ else:
     print(0)
 ```
 
-# Rook move
+# 5. Rook move
 
 ```.py
 a=int(input("Enter a figure of 1 digit"))
@@ -61,7 +61,7 @@ if a==c or b==d:
 else:
     print("NO")
 ```
-# Chessboard -same color-
+# 6. Chessboard -same color-
 
 ```.py
 a=int(input("Enter an integer of 1 digit"))
@@ -74,7 +74,7 @@ else:
     print("NO")
 ```
 
-# King move
+# 7. King move
 
 ```.py
 a=int(input("Enter an integer of 1 digit"))
@@ -87,7 +87,7 @@ else:
     print("NO")
 ```
 
-# Bishop move
+# 8. Bishop move
 
 ```.py
 a=int(input("Enter an integer of 1 digit"))
@@ -100,7 +100,7 @@ else:
     print("NO")
 ```
 
-# Queen move
+# 9. Queen move
 
 ```.py
 a=int(input("Enter an integer of 1 digit"))
@@ -115,7 +115,7 @@ else:
     print("NO")
 ```
 
-# Knight move
+# 10. Knight move
 
 ```.py
 a=int(input("Enter an integer of 1 digit"))
@@ -130,7 +130,7 @@ else:
     print("NO")
 ```
 
-# Chocolate bar
+# 11. Chocolate bar
 
 ```.py
 n=int(input("Enter an integer"))
@@ -144,7 +144,7 @@ else:
     print("NO")
 ```
 
-# leap year
+# 12. leap year
 
 ```.py
 x=int(input("Enter the year you were born in "))
