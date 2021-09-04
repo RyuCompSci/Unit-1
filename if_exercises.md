@@ -1,10 +1,10 @@
-##1. Minimum of two numbers
+#1. Minimum of two numbers
 
-'''.py
+```.py
 a=input("Enter a figure")
 b=input("Enter another figure")
 if a>b:
     print(b)
 else :
     print(a)
-'''
+```
