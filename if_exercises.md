@@ -1,4 +1,4 @@
-#1. Minimum of two numbers
+# 1. Minimum of two numbers
 
 ```.py
 a=input("Enter a figure")
