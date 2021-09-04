@@ -113,8 +113,11 @@ elif a==c or b==d:
     print("YES")
 else:
     print("NO")
-    
+```
+
 # Knight move
+
+```.py
 
 # Chocolate bar
 # leap year
