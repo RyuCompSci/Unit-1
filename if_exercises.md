@@ -147,4 +147,11 @@ else:
 # leap year
 
 ```.py
-
+x=int(input("Enter the year you were born in "))
+if x%4==0 and x%100>=1:
+    print("LEAP")
+elif x%400==0:
+    print("LEAP")
+else:
+    print("COMMON")
+```
