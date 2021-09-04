@@ -62,7 +62,30 @@ else:
     print("NO")
 ```
 # Chessboard -same color-
+
+```.py
+a=int(input("Enter an integer of 1 digit"))
+b=int(input("Enter an integer of 1 digit"))
+c=int(input("Enter an integer of 1 digit"))
+d=int(input("Enter an integer of 1 digit"))
+if (a+b+c+d)%2==0:
+    print("YES")
+else:
+    print("NO")
+```
+
 # King move
+
+```.py
+a=int(input("Enter an integer of 1 digit"))
+b=int(input("Enter an integer of 1 digit"))
+c=int(input("Enter an integer of 1 digit"))
+d=int(input("Enter an integer of 1 digit"))
+if -1<=(a-c)<=1 and -1<=(b-d)<=1:
+    print("YES")
+else:
+    print("NO")
+```
 # Bishop move
 # Queen move
 # Knight move
