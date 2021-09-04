@@ -118,6 +118,20 @@ else:
 # Knight move
 
 ```.py
+a=int(input("Enter an integer of 1 digit"))
+b=int(input("Enter an integer of 1 digit"))
+c=int(input("Enter an integer of 1 digit"))
+d=int(input("Enter an integer of 1 digit"))
+if abs(a-c)==1 and abs(b-d)==2:
+    print("YES")
+elif abs(a-c)==2 and abs(b-d)==1:
+    print("YES")
+else:
+    print("NO")
+```
 
 # Chocolate bar
+
+```.py
+
 # leap year
