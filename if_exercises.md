@@ -36,6 +36,9 @@ elif z<x and z<y:
 ```
 
 # Equal numbers
+
+```.py
+
 # Rook move
 # Chessboard -same color-
 # King move
