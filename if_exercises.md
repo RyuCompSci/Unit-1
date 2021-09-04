@@ -1,5 +1,7 @@
 # 1. Minimum of two numbers
 
+!.[.](comp_fchart2(2)
+
 ```.py
 a=input("Enter a figure")
 b=input("Enter another figure")
