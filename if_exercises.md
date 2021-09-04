@@ -38,8 +38,19 @@ elif z<x and z<y:
 # Equal numbers
 
 ```.py
+x=int(input("Enter an integer"))
+y=int(input("Enter another integer"))
+z=int(input("Enter another integer"))
+if x==y==z:
+    print(3)
+elif x==y!=z or x==z!=y or y==z!=x:
+    print(2)
+else:
+    print(0)
+```
 
 # Rook move
+
 # Chessboard -same color-
 # King move
 # Bishop move
