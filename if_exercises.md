@@ -2,8 +2,6 @@
 
 ![](comp_fchart2 (2).jpg)
 
-![](IMG_0721.jpg)
-
 ```.py
 a=input("Enter a figure")
 b=input("Enter another figure")
