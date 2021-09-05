@@ -13,6 +13,8 @@ else :
 
 # 2. Sign function
 
+![](if_12.jpg)
+
 ```.py
 x=int(input("Enter an integer"))
 if x>0:
@@ -24,6 +26,8 @@ else:
 ```
 
 # 3. Minimum of three numbers
+
+![](if_13.jpg)
 
 ```.py
 x=int(input("Enter an integer"))
@@ -38,6 +42,8 @@ elif z<x and z<y:
 ```
 
 # 4. Equal numbers
+
+![](if_14.jpg)
 
 ```.py
 x=int(input("Enter an integer"))
