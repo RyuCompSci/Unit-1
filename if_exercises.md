@@ -59,6 +59,8 @@ else:
 
 # 5. Rook move
 
+![](if_21.jpg)
+
 ```.py
 a=int(input("Enter a figure of 1 digit"))
 b=int(input("Enter a figure of 1 digit"))
@@ -70,6 +72,8 @@ else:
     print("NO")
 ```
 # 6. Chessboard -same color-
+
+![](if_22.jpg)
 
 ```.py
 a=int(input("Enter an integer of 1 digit"))
@@ -84,6 +88,8 @@ else:
 
 # 7. King move
 
+![](if_23.jpg)
+
 ```.py
 a=int(input("Enter an integer of 1 digit"))
 b=int(input("Enter an integer of 1 digit"))
@@ -97,6 +103,8 @@ else:
 
 # 8. Bishop move
 
+![](if_24.jpg)
+
 ```.py
 a=int(input("Enter an integer of 1 digit"))
 b=int(input("Enter an integer of 1 digit"))
@@ -109,6 +117,8 @@ else:
 ```
 
 # 9. Queen move
+
+![](if_25.jpg)
 
 ```.py
 a=int(input("Enter an integer of 1 digit"))
@@ -125,6 +135,8 @@ else:
 
 # 10. Knight move
 
+![](if_31.jpg)
+
 ```.py
 a=int(input("Enter an integer of 1 digit"))
 b=int(input("Enter an integer of 1 digit"))
@@ -140,6 +152,8 @@ else:
 
 # 11. Chocolate bar
 
+![](if_32.jpg)
+
 ```.py
 n=int(input("Enter an integer"))
 m=int(input("Enter an integer"))
@@ -153,6 +167,8 @@ else:
 ```
 
 # 12. leap year
+
+![](if_33.jpg)
 
 ```.py
 x=int(input("Enter the year you were born in "))
