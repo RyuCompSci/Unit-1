@@ -1,6 +1,6 @@
 # 1. Minimum of two numbers
 
-![](comp_fchart2(2))
+![](comp_fchart2(2).jpg)
 
 ```.py
 a=input("Enter a figure")
