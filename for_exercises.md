@@ -68,3 +68,14 @@ for i in range (n):
    n-=1
 print(x)
 ```
+
+# 7.The number of zeros
+
+```.py
+N=int(input())
+x=0
+for i in range(N):
+    if int(input())==0:
+        x+=1
+print(x)
+```
