@@ -79,3 +79,14 @@ for i in range(N):
         x+=1
 print(x)
 ```
+
+# 8.Adding factorials
+
+```.py
+n=int(input())
+x=1
+y=0
+for i in range(n):
+    y+=x*(x-(x-1))
+    x+=1
+    print(y)
