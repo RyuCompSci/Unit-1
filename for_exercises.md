@@ -84,9 +84,21 @@ print(x)
 
 ```.py
 n=int(input())
-x=1
-y=0
-for i in range(n):
-    y+=x*(x-(x-1))
-    x+=1
+x=3
+y=3
+z=2
+if n==1:
+    print(1)
+elif n==2:
+    print(3)
+else:
+    for i in range(n-2):
+        y=y+z*x
+        z*=x
+        x+=1
     print(y)
+```
+
+# 9.Ladder
+
+```.py
