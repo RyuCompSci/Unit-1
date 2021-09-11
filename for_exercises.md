@@ -115,3 +115,19 @@ else:
         y+=1
         print(z)
 ```
+
+# 10.Lost card
+
+```.py
+N=int(input())
+x=[N]
+y=["a"]
+for i in range(N-1):
+    y.append(int(input()))
+y.remove("a")
+for i in range(N-1):
+    N-=1
+    x.append(N)
+z=list(set(x)-set(y))
+print(z[0])
+```
