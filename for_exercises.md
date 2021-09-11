@@ -102,3 +102,16 @@ else:
 # 9.Ladder
 
 ```.py
+n=int(input())
+x=[2,3,4,5,6,7,8,9]
+y=1
+z=1
+if n==1:
+    print(1)
+else:
+    print(1)
+    for i in range(n-1):
+        z=z*10+(y+1)
+        y+=1
+        print(z)
+```
