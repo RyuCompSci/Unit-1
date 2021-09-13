@@ -1,6 +1,6 @@
 # 1.Series one
 
-![](Chapter 4_ Series 1.png)
+
 
 ```.py
 a=int(input())
