@@ -14,6 +14,8 @@ if numbers>=0:
 
 # 2.Series two
 
+![](loop2.jpg.jpg)
+
 ```.py
 if a<b:
     for i in range(num+1):
@@ -27,6 +29,8 @@ else:
 
 # 3.Sum of ten number
 
+![](loop3.jpg.jpg)
+
 ```.py
 y=0
 for i in range (10):
@@ -37,6 +41,8 @@ print(y)
 ```
 
 # 4.Sum of N numbers
+
+![](loop4.jpg.jpg)
 
 ```.py
 N=int(input())
@@ -50,6 +56,8 @@ print(y)
 
 # 5.Sum of cubes
 
+![](loop5.jpg.jpg)
+
 ```.py
 N=int(input())
 x=1
@@ -62,6 +70,8 @@ print(y)
 
 # 6.Factorial
 
+![](loop6.jpg.jpg)
+
 ```.py
 n=int(input())
 x=1
@@ -73,6 +83,8 @@ print(x)
 
 # 7.The number of zeros
 
+![](loop7.jpg.jpg)
+
 ```.py
 N=int(input())
 x=0
@@ -83,6 +95,8 @@ print(x)
 ```
 
 # 8.Adding factorials
+
+![](loop8.jpg.jpg)
 
 ```.py
 n=int(input())
@@ -103,6 +117,8 @@ else:
 
 # 9.Ladder
 
+![](loop9.jpg.jpg)
+
 ```.py
 n=int(input())
 x=[2,3,4,5,6,7,8,9]
@@ -119,6 +135,8 @@ else:
 ```
 
 # 10.Lost card
+
+![](loop10.jpg.jpg)
 
 ```.py
 N=int(input())
