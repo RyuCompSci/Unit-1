@@ -1,6 +1,6 @@
 # 1.Series one
 
-
+![](loop1.jpg.jpg)
 
 ```.py
 a=int(input())
