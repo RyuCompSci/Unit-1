@@ -61,4 +61,7 @@ while x!=0:
 print(y)
 ```
 
-# 6.
+# 6.THe sum of the sequence
+
+```.py
+
