@@ -23,3 +23,31 @@ while N%x!=0 and N>=x+1:
 # 3.The power of two
 
 ```.py
+N=int(input())
+x=0
+y=2
+if N==1:
+    print(0)
+    print(1)
+else:
+    while y<=N:
+        y=y*2
+        x+=1
+    y/=2
+    print(x)
+    print(y)
+```
+
+# 4.Moring jog
+
+```.py
+x=int(input())
+y=int(input())
+z=1
+while x<y:
+    x*=1.1
+    z+=1
+print(z)
+```
+
+# 5.
