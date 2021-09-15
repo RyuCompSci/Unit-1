@@ -50,4 +50,15 @@ while x<y:
 print(z)
 ```
 
-# 5.
+# 5.The length of the sequence
+
+```.py
+x=int(input())
+y=0
+while x!=0:
+    x=int(input())
+    y+=1
+print(y)
+```
+
+# 6.
