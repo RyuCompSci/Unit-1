@@ -72,4 +72,18 @@ while x!=0:
 print(y)
 ```
 
-# 7.
+# 7.The average of the sequence
+
+```.py
+x=int(input())
+y=x
+z=0
+while x!=0:
+    x=int(input())
+    y+=x
+    z+=1
+y/=z
+print(y)
+```
+
+# 8.
