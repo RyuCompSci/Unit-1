@@ -64,4 +64,12 @@ print(y)
 # 6.THe sum of the sequence
 
 ```.py
+x=int(input())
+y=x
+while x!=0:
+    x=int(input())
+    y+=x
+print(y)
+```
 
+# 7.
