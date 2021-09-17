@@ -86,4 +86,14 @@ y/=z
 print(y)
 ```
 
-# 8.
+# 8.The maximum of the sequence
+
+```.py
+x=1
+y=[0]
+z=1
+while x!=0:
+    x=int(input())
+    if y[0]<x:
+        y.append(x)
+        y.remove
