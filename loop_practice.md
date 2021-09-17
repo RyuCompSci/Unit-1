@@ -100,4 +100,33 @@ print(y)
 # 9.The index of the maximum of a sequence
 
 ```.py
+x=int(input())
+y=x
+z=[x]
+while x!=0:
+    x=int(input())
+    z.append(x)
+    y=((x+y)+abs(x-y))//2
+a=z.index(y)+1
+print(a)
+```
+
+# 10.The number of even elements of the sequence
+
+```.py
+x=1
+y=0
+while x!=0:
+    x=int(input())
+    if x%2==0:
+        y+=1
+    else:
+        y+=0
+y-=1
+print(y)
+```
+
+# 11.The number of elements that are greater than the previous one
+
+```.py
 
