@@ -89,11 +89,15 @@ print(y)
 # 8.The maximum of the sequence
 
 ```.py
-x=1
-y=[0]
-z=1
+x=int(input())
+y=x
 while x!=0:
     x=int(input())
-    if y[0]<x:
-        y.append(x)
-        y.remove
+    y=((x+y)+abs(x-y))//2
+print(y)
+```
+
+# 9.The index of the maximum of a sequence
+
+```.py
+
