@@ -61,7 +61,7 @@ while x!=0:
 print(y)
 ```
 
-# 6.THe sum of the sequence
+# 6.The sum of the sequence
 
 ```.py
 x=int(input())
@@ -127,6 +127,22 @@ print(y)
 ```
 
 # 11.The number of elements that are greater than the previous one
+
+```.py
+x=1
+y=int(input())
+z=0
+while x!=0:
+    x=int(input())
+    if x>y:
+        z+=1
+    else:
+        z+=0
+    y=x
+print(z)
+```
+
+# 12.The second maximum
 
 ```.py
 
