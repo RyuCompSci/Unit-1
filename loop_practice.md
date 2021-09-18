@@ -145,4 +145,22 @@ print(z)
 # 12.The second maximum
 
 ```.py
+x=int(input())
+y=x
+z=[x]
+while x!=0:
+    x=int(input())
+    y=((x+y)+abs(x-y))//2
+    z.append(x)
+z.remove(y)
+a=0
+b=len(z)
+c=((z[a]+z[(a+1)]+abs(z[a]-z[(a+1)]))//2)
+a+=1
+while z[a]!=0:
+    c=((c+z[(a+1)]+abs(c-z[(a+1)]))//2)
+    a+=1
+print(c)
+```
 
+# 13.The number of elements equal to the maximum
