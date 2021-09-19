@@ -164,3 +164,20 @@ print(c)
 ```
 
 # 13.The number of elements equal to the maximum
+
+```.py
+x=int(input())
+y=x
+z=[x]
+while x!=0:
+    x=int(input())
+    z.append(x)
+    y=((x+y)+abs(x-y))//2
+a=z.count(y)
+```
+
+# 14.Fibonacci number
+
+```.py
+
+print(a)
