@@ -179,5 +179,23 @@ a=z.count(y)
 # 14.Fibonacci number
 
 ```.py
+n=int(input())
+x=1
+y=1
+z=1
+if n==0:
+    print(0)
+elif n==1:
+    print(1)
+elif n==2:
+    print(1)
+else:
+    while x<n-1:
+        a=y+z
+        z=y
+        y=a
+        x+=1
+    print(a)
+```
 
-print(a)
+# 15.
