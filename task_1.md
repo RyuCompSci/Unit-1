@@ -6,4 +6,8 @@ Since the client, the owner of the game shop, is enthusiastic and open to any ki
 
 As I mentioned in the answer of the question 1, the client proposed all the conditions on the game and said nothing upon that. It means that I can assume he accepts any game that those conditions are fulfilled. However, from the view of professional molarity, I have to do all my best to fulfill the client's need and then I might need to utillize the idea of MPVs for that. In my case, the first step of MPV would be the basic idea of the game, such as the genre, system and so on. Other than that, there should also be the MPVs for usability, story and settings.
 
+## Do you see similarities between the Human-Centered Design cycle presented in the video and the Design Cycle we use for developing software?
+
+I found a similarity between them in terms of their common feature that they repeats the same process many times to achieve the goal.
+
 ## 
