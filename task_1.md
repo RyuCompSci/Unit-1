@@ -17,16 +17,3 @@ As an instance of a simplest principle for human-centered design, the design sho
 ## Consider your game. Think about ways you can improve the Players’ Experience using Human-centered design. Write below your ideas.
 
 When considering an application of human-centered design to my game, it reaches the plateau of the limitation of text-based game. Text-based game cannot be as user-friendly as normal video games in terms of visualization of centents at any cost. Therefore, I might have to consider a mixture of them to increase the usability of the game.
-
-## Programming Task 1
-
-```.py
-x=int(input())
-y=int(input())
-if x==10 or y==10:
-    print("TRUE")
-elif x+y==10:
-    print("TRUE")
-else:
-    print("FALSE")
-```
