@@ -17,4 +17,4 @@ result=Makes20(1,20)
 print(result)
 ```
 
-![](スクリーンショット (211).png)
+![](Makes20.png)
