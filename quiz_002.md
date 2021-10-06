@@ -21,4 +21,4 @@ def ldif(ip1,ip2,ip3):
   return difference
   ```
   
-  ![](
+  ![](largest_difference.png)
