@@ -1,7 +1,7 @@
 ## The largest difference among three numbers
 
 ```.py
-def ldif(ip,ip2,ip3):
+def ldif(ip1,ip2,ip3):
   if ip1>=ip2 and ip1>=ip3:
     largest=ip1
   elif ip2>=ip1 and ip2>=ip3:
