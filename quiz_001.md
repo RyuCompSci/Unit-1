@@ -1,4 +1,5 @@
 ## Makes 20
+### Given two numbers. If one of them is 20 or the sum of the two numbers is 20, it is TRUE. Otherwise, it is FALSE.
 
 ```.py
 def Makes20(ip1,ip2):
