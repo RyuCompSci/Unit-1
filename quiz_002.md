@@ -1,5 +1,5 @@
 ## The largest difference among three numbers
-
+### Given three numbers. The largest difference between two of the three numbers.
 ```.py
 def ldif(ip1,ip2,ip3):
   if ip1>=ip2 and ip1>=ip3:
