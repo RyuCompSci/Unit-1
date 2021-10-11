@@ -14,7 +14,7 @@ result=paolosos("olo")
 print(result)
 ```
 
-![](
+![](Paolo's_mysterybox.png)
 
 
 ### Berill's
@@ -46,6 +46,7 @@ result = repeated_letter("hello", "appreciate")
 print(result)
 ```
 
+![](Berril's_mysterybox)
 ### Esslam's
 
 ```.py
@@ -70,3 +71,5 @@ print(result)
 result = unique_letter("street")
 print(result)
 ```
+
+![](Esslam's_mysterybox)
