@@ -13,3 +13,5 @@ for i in range(r):
 t=s*d+rr
 return t
 ```
+
+![](rangePatternN.png)
