@@ -1,4 +1,4 @@
-### Black Jack Text-Based Game
+### Blackjack Text-Based Game
 
 ```.py
 # importing random module
