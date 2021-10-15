@@ -10,6 +10,34 @@ player_name = str(input("\n\nPlease enter your name: "))
 
 opt = str(input("\n\nWould you like to see the rules of Blackjack? if yes, type 'y'. If no, type 'n'. : "))
 
+if opt == "y":
+    print("\n\n\nBlackjack, also known as Twenty-one, is a simple card game. The game requires 52-pack cards and Jokers"
+          " are not used for this game. "
+          "\n\nOBJECT OF THE GAME"
+          "\nThe player attempts to beat the dealer by getting a count as close to 21 as possible, without going"
+          " over 21."
+          "\n\nCARD VALUES"
+          "\nIt is up to the player if an ace is worth 1 or 11. Face cards are 10 and any other card is "
+          "its pip value."
+          "\n\nTHE DEAL"
+          "\nWhen the game begins, the player is given two cards face up to him/her. The dealer gets one card face up "
+          "and one card face down."
+          "\n\nTHE PLAY"
+          "\nThe player can decide whether to 'stand' (not ask for another card) or 'hit' (ask for another "
+          "card in an attempt to get closer to a count of 21, or even hit 21 exactly).\n The player can continue this "
+          "until deciding to stand on the total (if it is 21 or under), or goes 'bust' (if it is over 21). In the "
+          "latter case, the player loses."
+          "\n\nTHE DEALER'S PLAY"
+          "\nWhen the player's turn is over, the dealers face-down card is turned up. If the total of the cared ranks "
+          "is 17 or more, it must stand. If the total is 16 or under, the \ndealer must take a card. The dealer must "
+          "continue to take cards until the total is 17 or more, at which point the dealer must stand.The dealer's "
+          "decisions are all automatic."
+          "\n\nTHE ISSUE"
+          "\nWhen the dealer's turn is over, if the dealer's total score is not over 21 and closer to 21 than the "
+          "player's, the player loses. Otherwise, the player wins. When the \nplayer's score and the dealer's score is "
+          "even, the player loses. Also, when both of them bust or make blackjack, the player loses.")
+    input("\n\n\nPress enter to start a game...")
+
 # listing all the suits and ranks of cards
 cards_rank = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
 cards_suit = ["♠", "♥", "♣", "♦"]
@@ -143,7 +171,7 @@ else:
     print("\n\n\nDealer's turn")
     time.sleep(1.5)
 
-    print("\n\nThe hidden card is flipped over")
+    print("\n\nThe faced-down card is flipped over")
     time.sleep(2)
 
     if dealer2[0] == "10":
@@ -253,4 +281,5 @@ def caesar_cypher(shift: int, message: str):
 with open("database.txt", "a") as files:
     data = f"{player_name}, {sum_rank_player}, {issue}, {round(tim)}\n"
     files.write(data)
+
 ```
