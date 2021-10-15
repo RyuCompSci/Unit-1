@@ -5,6 +5,12 @@
 import random
 import time
 
+print("\n\n\nWelcome to 'Text-based Blackjack game'")
+player_name = str(input("\n\nPlease enter your name: "))
+
+opt = str(input("\n\nWould you like to see the rules of Blackjack? if yes, type 'y'. If no, type 'n'. : "))
+
+
 # listing all the suits and ranks of cards
 cards_rank = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
 cards_suit = ["♠", "♥", "♣", "♦"]
@@ -38,17 +44,19 @@ opencard = """
 │     {}{}│
 └─────────┘
 """
+# Count the time
+time_sta = time.time()
 # Straightening the line of the right side of ascii card
 print(f"\n\n\nYour cards")
 time.sleep(1)
 if player1[0] == "10" and player2[0] == "10":
     print(opencard.format(player1[0], "  ", player1[1], "   ", "  ", player1[0]), opencard.format(player2[0], "  ", player2[1], "   ", "  ", player2[0]))
 elif player1[0] == "10" and player2[0] != "10":
-    print(opencard.format(player1[0], "  ", player1[1], "   ", "   ",player1[0]),opencard.format(player2[0], "   ", player2[1], "   ", "   ", player2[0]))
+    print(opencard.format(player1[0], "  ", player1[1], "   ", "   ", player1[0]), opencard.format(player2[0], "   ", player2[1], "   ", "   ", player2[0]))
 elif player1[0] != "10" and player2[0] == "10":
     print(opencard.format(player1[0], "   ", player1[1], "   ", "  ", player1[0]), opencard.format(player2[0], "  ", player2[1], "   ", "  ", player2[0]))
 else:
-    print(opencard.format(player1[0], "   ", player1[1], "   ", "   ",player1[0]),opencard.format(player2[0], "   ", player2[1], "   ", "   ", player2[0]))
+    print(opencard.format(player1[0], "   ", player1[1], "   ", "   ", player1[0]), opencard.format(player2[0], "   ", player2[1], "   ", "   ", player2[0]))
 
 # Straightening the line of the right side of ascii card
 time.sleep(2)
@@ -119,8 +127,11 @@ while sum_rank_player < 21:
 
 time.sleep(1.5)
 # Intermediate results
-if sum_rank_player == 21:
-    print("\n\nYou win")
+if sum_rank_player > 21:
+    print("\nBust")
+    time.sleep(1)
+    print("\nYou lose")
+    time_end = time.time()
 else:
     print("\n\nYour score is ", sum_rank_player)
     time.sleep(1.8)
@@ -171,37 +182,45 @@ else:
         if dealer_rank == "J" or dealer_rank == "Q" or dealer_rank == "K":
             sum_rank_dealer += 10
             print(opencard.format(dealer_rank, "   ", dealer_suit, "   ", "   ", dealer_rank))
-            time.sleep(1)
+            time.sleep(1.5)
             print("\nDealer's score is ", sum_rank_dealer)
         elif dealer_rank == "A" and sum_rank_dealer >= 11:
             sum_rank_dealer += 1
             print(opencard.format(dealer_rank, "   ", dealer_suit, "   ", "   ", dealer_rank))
-            time.sleep(1)
+            time.sleep(1.5)
             print("\nDealer's score is ", sum_rank_dealer)
         elif dealer_rank == "A" and sum_rank_dealer < 11:
             sum_rank_dealer += 11
             print(opencard.format(dealer_rank, "   ", dealer_suit, "   ", "   ", dealer_rank))
-            time.sleep(1)
+            time.sleep(1.5)
             print("\nDealer's score is ", sum_rank_dealer)
         elif dealer_rank == "10":
             sum_rank_dealer += 10
             print(opencard.format(dealer_rank, "  ", dealer_suit, "   ", "  ", dealer_rank))
-            time.sleep(1)
+            time.sleep(1.5)
             print("\nDealer's score is ", sum_rank_dealer)
         else:
             sum_rank_dealer += int(dealer_rank)
             print(opencard.format(dealer_rank, "   ", dealer_suit, "   ", "   ", dealer_rank))
-            time.sleep(1)
+            time.sleep(1.5)
             print("\nDealer's score is ", sum_rank_dealer)
     time.sleep(1.5)
-    if sum_rank_dealer > 21 and sum_rank_player > 21:
-        print("\nYou lose")
-    elif sum_rank_dealer > 21 and sum_rank_player < 21:
+    if sum_rank_dealer > 21 and sum_rank_player < 21:
         print("\nYou win")
+        time_end = time.time()
     elif 21 >= sum_rank_dealer > sum_rank_player:
         print("\nYou lose")
+        time_end = time.time()
     elif sum_rank_dealer < 21 and sum_rank_dealer < sum_rank_player:
         print("\nYou win")
+        time_end = time.time()
     elif sum_rank_dealer == sum_rank_dealer:
         print("\nDraw")
+        time_end = time.time()
+
+time.sleep(2)
+print("\n\n" + "Name: ", player_name)
+tim = time_end - time_sta
+print("Time: ", str(round(tim)) + "s")
+print("Score: ", sum_rank_player)
 ```
