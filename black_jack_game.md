@@ -10,16 +10,15 @@ player_name = str(input("\n\nPlease enter your name: "))
 
 opt = str(input("\n\nWould you like to see the rules of Blackjack? if yes, type 'y'. If no, type 'n'. : "))
 
-
 # listing all the suits and ranks of cards
 cards_rank = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
 cards_suit = ["♠", "♥", "♣", "♦"]
 
 # allocating random cards to the player and the dealer
-dealer1 = random.choice(cards_rank)+random.choice(cards_suit)
-dealer2 = random.choice(cards_rank)+random.choice(cards_suit)
-player1 = random.choice(cards_rank)+random.choice(cards_suit)
-player2 = random.choice(cards_rank)+random.choice(cards_suit)
+dealer1 = random.choice(cards_rank) + random.choice(cards_suit)
+dealer2 = random.choice(cards_rank) + random.choice(cards_suit)
+player1 = random.choice(cards_rank) + random.choice(cards_suit)
+player2 = random.choice(cards_rank) + random.choice(cards_suit)
 
 # ascii illustration of cards
 hiddencard = """
@@ -50,13 +49,17 @@ time_sta = time.time()
 print(f"\n\n\nYour cards")
 time.sleep(1)
 if player1[0] == "10" and player2[0] == "10":
-    print(opencard.format(player1[0], "  ", player1[1], "   ", "  ", player1[0]), opencard.format(player2[0], "  ", player2[1], "   ", "  ", player2[0]))
+    print(opencard.format(player1[0], "  ", player1[1], "   ", "  ", player1[0]),
+          opencard.format(player2[0], "  ", player2[1], "   ", "  ", player2[0]))
 elif player1[0] == "10" and player2[0] != "10":
-    print(opencard.format(player1[0], "  ", player1[1], "   ", "   ", player1[0]), opencard.format(player2[0], "   ", player2[1], "   ", "   ", player2[0]))
+    print(opencard.format(player1[0], "  ", player1[1], "   ", "   ", player1[0]),
+          opencard.format(player2[0], "   ", player2[1], "   ", "   ", player2[0]))
 elif player1[0] != "10" and player2[0] == "10":
-    print(opencard.format(player1[0], "   ", player1[1], "   ", "  ", player1[0]), opencard.format(player2[0], "  ", player2[1], "   ", "  ", player2[0]))
+    print(opencard.format(player1[0], "   ", player1[1], "   ", "  ", player1[0]),
+          opencard.format(player2[0], "  ", player2[1], "   ", "  ", player2[0]))
 else:
-    print(opencard.format(player1[0], "   ", player1[1], "   ", "   ", player1[0]), opencard.format(player2[0], "   ", player2[1], "   ", "   ", player2[0]))
+    print(opencard.format(player1[0], "   ", player1[1], "   ", "   ", player1[0]),
+          opencard.format(player2[0], "   ", player2[1], "   ", "   ", player2[0]))
 
 # Straightening the line of the right side of ascii card
 time.sleep(2)
@@ -132,6 +135,7 @@ if sum_rank_player > 21:
     time.sleep(1)
     print("\nYou lose")
     time_end = time.time()
+    issue = "Lose"
 else:
     print("\n\nYour score is ", sum_rank_player)
     time.sleep(1.8)
@@ -208,19 +212,45 @@ else:
     if sum_rank_dealer > 21 and sum_rank_player < 21:
         print("\nYou win")
         time_end = time.time()
+        issue = "Win"
     elif 21 >= sum_rank_dealer > sum_rank_player:
         print("\nYou lose")
         time_end = time.time()
+        issue = "Lose"
     elif sum_rank_dealer < 21 and sum_rank_dealer < sum_rank_player:
         print("\nYou win")
         time_end = time.time()
+        issue = "Win"
     elif sum_rank_dealer == sum_rank_dealer:
         print("\nDraw")
         time_end = time.time()
+        issue = "Draw"
 
 time.sleep(2)
 print("\n\n" + "Name: ", player_name)
 tim = time_end - time_sta
 print("Time: ", str(round(tim)) + "s")
 print("Score: ", sum_rank_player)
+
+
+# encode the data of the players into caesar cypher
+def caesar_cypher(shift: int, message: str):
+    encoded_message = ''
+    for i in range(len(message)):
+        letter = message[i]
+        letter_code = ord(letter)
+        # if we "z" and shift=3, 122+3=125 =>'}'
+        # but we need 'c' which is 99
+        shifted_code = letter_code + shift
+        if letter_code + shift > 122:
+            # if we go beyond "z" we circle back to "a"
+            shifted_code -= 26
+        encoded_message += chr(shifted_code)
+    return encoded_message
+
+
+# Uploading the results to a file
+with open("database.txt", "a") as files:
+    data = f"{player_name}, {sum_rank_player}, {issue}, {round(tim)}\n"
+    files.write(data)
 ```
