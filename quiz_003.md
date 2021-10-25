@@ -11,4 +11,4 @@ def rangePattern(N):
     return result, sumn
 ```
 
-![](rangePatternN.png)
+![](rangePattern2.png)
