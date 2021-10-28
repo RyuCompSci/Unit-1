@@ -24,4 +24,8 @@ When I got stuck on a question in Snakify, it often worked well that I take some
 
 ### What did not work well during the development of unit 1?
 
-Every time I apply new functions, it first did not work.
+Every time I apply new functions, it always did not work well at first.
+
+### A developper is only responsible for the successs criteria? Agree or disagree?
+
+As long as meeting the reqirements and wants of the clients, a developper only has to be responsible for the success criteria. Clients' wishes should always be prioritized to anything, so if the developper finds something that covers the clients' needs which is not included in the success criteria, it is ideal to enhanse or fix that. 
